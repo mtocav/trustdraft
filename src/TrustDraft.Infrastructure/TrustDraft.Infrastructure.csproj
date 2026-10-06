@@ -7,7 +7,13 @@
   <ItemGroup>
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.*" />
     <PackageReference Include="Pgvector.EntityFrameworkCore" Version="0.*" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.*" PrivateAssets="all" />
+    <!--
+      Pin EF Core explicitly and keep Relational and Design on the same version.
+      Design is PrivateAssets=all, so without this Infrastructure compiled against the newer EF it pulls in,
+      while Api/Worker/Tests only saw the older EF that Npgsql depends on (CS1705).
+    -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="10.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.12" PrivateAssets="all" />
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="10.*" />
   </ItemGroup>
 
