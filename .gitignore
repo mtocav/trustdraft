@@ -1,0 +1,28 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+TestResults/
+
+# Node
+node_modules/
+web/dist/
+
+# Local data & secrets
+data/
+.env
+.env.*
+!.env.example
+appsettings.*.local.json
+
+# Editors / OS
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+
+# Eval output
+evals/results/

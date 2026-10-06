@@ -1,0 +1,5 @@
+{"id": "q001", "question": "Is data at rest encrypted on all company laptops?", "expected_verdict": "Yes", "expected_answer_contains": ["BitLocker"], "expected_sources": ["encryption-policy.md"], "answerable": true}
+{"id": "q002", "question": "Beschikt u over een gedocumenteerd incident response plan en hoe snel meldt u incidenten aan klanten?", "expected_verdict": "Yes", "expected_answer_contains": ["24 uur"], "expected_sources": ["incident-response.md"], "answerable": true}
+{"id": "q003", "question": "Is multi-factor authentication enforced for all remote access?", "expected_verdict": "Yes", "expected_answer_contains": ["MFA"], "expected_sources": ["access-control.md"], "answerable": true}
+{"id": "q004", "question": "How often are backups tested by performing a restore?", "expected_verdict": null, "expected_answer_contains": ["quarterly"], "expected_sources": ["backup-recovery.md"], "answerable": true}
+{"id": "q005", "question": "Do you hold an ISO 27001 certification?", "expected_verdict": null, "expected_answer_contains": [], "expected_sources": [], "answerable": false}
